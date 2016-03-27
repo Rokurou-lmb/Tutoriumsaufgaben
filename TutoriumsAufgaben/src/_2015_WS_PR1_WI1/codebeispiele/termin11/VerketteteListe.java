@@ -1,4 +1,4 @@
-package codebeispiele.termin11;
+package _2015_WS_PR1_WI1.codebeispiele.termin11;
 
 /**
  * Eine einfach verkettete Liste mit einem Startwaechter, welche Objekte eines gegebenen Typen speichert.
