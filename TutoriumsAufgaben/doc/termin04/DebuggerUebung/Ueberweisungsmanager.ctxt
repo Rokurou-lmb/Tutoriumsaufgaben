@@ -1,5 +1,0 @@
-#BlueJ class context
-comment0.params=quellKonto\ zielKonto\ betrag
-comment0.target=boolean\ ueberweisen(Konto,\ Konto,\ int)
-comment0.text=\r\n\ Diese\ Methode\ ermoeglicht\ es\ einen\ Geldbetrag\ von\ einem,\r\n\ zu\ einem\ anderen\ Konto\ zu\ uebertragen.\r\n\ Der\ Geldbetrag\ muss\ zuerst\ vom\ Quellkonto\ abgezogen,\r\n\ und\ anschlie\u00DFend\ zum\ Zielkonto\ eingezahlt\ werden.\r\n\ \r\n\ @param\ quellKonto\ das\ Konto\ von\ welchem\ Geld\ abgehoben\ werden\ soll.\r\n\ @param\ zielKonto\ das\ Konto,\ auf\ welches\ das\ Geld\ eingezahlt\ werden\ soll.\r\n\ @param\ betrag\ der\ zu\ uebertragende\ Geldbetrag.\r\n\ @return\ true\ wenn\ die\ Ueberweisung\ erfolgreich\ war,\ false\ wenn\ nicht.\r\n
-numComments=1
