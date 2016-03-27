@@ -8,14 +8,14 @@ package codebeispiele.termin03;
 public class Beispiele {
 	
 	
-	public void operatorenBeispiel() {
-		int zahl1 = 10;
-		int zahl2 = 12;
-		boolean bool = true;
-		if(zahl1 < zahl2 && bool = true) {
-			// tue etwas
-		}
-	}
+//	public void operatorenBeispiel() {
+//		int zahl1 = 10;
+//		int zahl2 = 12;
+//		boolean bool = true;
+//		if(zahl1 < zahl2 && bool = true) {
+//			// tue etwas
+//		}
+//	}
 	
 	
 	
@@ -55,14 +55,14 @@ public class Beispiele {
 	
 	
 	
-	public void VerkettungBeispiel() {
-		int zahl1 = 15;
-		int zahl2 = 12;
-		int zahl3 = 10;
-		if(zahl1 > zahl2 >= zahl3) {
-			// tue etwas
-		}
-	}
+//	public void VerkettungBeispiel() {
+//		int zahl1 = 15;
+//		int zahl2 = 12;
+//		int zahl3 = 10;
+//		if(zahl1 > zahl2 >= zahl3) {
+//			// tue etwas
+//		}
+//	}
 	
 	
 	
