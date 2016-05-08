@@ -35,4 +35,9 @@ public class Karte {
 	public boolean größerAls(Karte andereKarte) {
 		return wert.getZahlenWert() > andereKarte.getWert().getZahlenWert();
 	}
+	
+	@Override
+	public String toString() {
+		return farbe.getBezeichnung() + wert.getZahlenWert();
+	}
 }

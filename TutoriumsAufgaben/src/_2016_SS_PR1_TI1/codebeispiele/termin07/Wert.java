@@ -22,7 +22,7 @@ public enum Wert {
 	
 	private int zahlenWert;
 	
-	Wert(int zahlenWert) {
+	private Wert(int zahlenWert) {
 		this.zahlenWert = zahlenWert;
 	}
 	
