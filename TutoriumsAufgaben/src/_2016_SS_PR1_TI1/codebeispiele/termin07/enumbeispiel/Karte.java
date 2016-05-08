@@ -1,4 +1,4 @@
-package _2016_SS_PR1_TI1.codebeispiele.termin07;
+package _2016_SS_PR1_TI1.codebeispiele.termin07.enumbeispiel;
 
 /**
  * Beschreibt eine Spielkarte welche sich durch ihre {@link Farbe} und ihren {@link Wert} beschreibt.
