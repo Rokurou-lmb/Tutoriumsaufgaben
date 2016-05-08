@@ -1,6 +1,12 @@
 package _2016_SS_PR1_TI1.codebeispiele.termin07;
 
+/**
+ * Beschreibt mögliche Werte einer Spielkarte.
+ * Asse werden in diesem Beispiel als 1 angesehen
+ * @author Lenno
+ */
 public enum Wert {
+	ASS(1),
 	ZWEI(2),
 	DREI(3),
 	VIER(4),
@@ -12,8 +18,7 @@ public enum Wert {
 	ZEHN(10),
 	BUBE(11),
 	DAME(12),
-	KÖNIG(13),
-	ASS(14);
+	KÖNIG(13);
 	
 	private int zahlenWert;
 	
