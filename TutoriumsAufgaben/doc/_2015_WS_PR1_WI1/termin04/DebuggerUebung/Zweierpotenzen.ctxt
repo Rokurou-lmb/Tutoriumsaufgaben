@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=exponent
+comment0.target=int\ zweierpotenz(int)
+comment0.text=\r\n\ Diese\ Methode\ liefert\ die\ Zweierpotenz\ zu\ einem\ \r\n\ gegebenen\ ganzzahligem\ nat\u00FCrlichem\ Exponenten\ zur\u00FCck.\r\n\ \r\n\ @param\ exponent\ der\ Exponent\ der\ zu\ berechnenden\ Zweierpotenz\r\n\ @return\ die\ Zweierpotenz\ zu\ dem\ gegebenen\ Exponenten\r\n
+numComments=1

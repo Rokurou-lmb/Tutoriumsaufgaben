@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=aktuellesGewicht
+comment0.target=Waage(int)
+comment0.text=\r\n\ Initialisiert\ ein\ neues\ Objekt\ des\ Typs\ Waage\ mit\ dem\ gegebenen\ Gewicht.\r\n\ @param\ Aktuelles\ Gewicht\ in\ Gramm\r\n
+comment1.params=neuesGewicht
+comment1.target=void\ registriere(int)
+comment1.text=\r\n\ Registriert\ ein\ neues\ Gewicht\r\n\ @param\ Das\ aktuelle\ Gewicht\r\n
+comment2.params=
+comment2.target=int\ gibTrend()
+comment2.text=\r\n\ Gibt\ einen\ representativen\ Wert\ zur\ verdeutlichung\ des\ Trends\ an\r\n\ @return\ Trend\ der\ Gewichtsentwicklung\r\n
+comment3.params=
+comment3.target=int\ gibMinimalgewicht()
+comment3.text=\r\n\ Gibt\ das\ kleinste\ gemessene\ Gewicht\ zurueck\r\n\ @return\ Kleinstes\ gemessenes\ Gewicht\r\n
+comment4.params=
+comment4.target=int\ gibMaximalgewicht()
+comment4.text=\r\n\ Gibt\ das\ groesste\ gemessene\ Gewicht\ zurueck\r\n\ @return\ Groesstes\ gemessenes\ Gewicht\r\n
+comment5.params=
+comment5.target=int\ gibDurschnittsgewicht()
+comment5.text=\r\n\ Gibt\ den\ Durchschnitt\ der\ gemessene\ Gewichte\ zurueck\r\n\ @return\ Durchschnitt\ der\ gemessenen\ Gewichte\r\n
+numComments=6

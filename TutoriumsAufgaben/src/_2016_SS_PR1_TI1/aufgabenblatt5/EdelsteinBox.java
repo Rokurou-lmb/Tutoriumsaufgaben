@@ -1,6 +1,5 @@
 package _2016_SS_PR1_TI1.aufgabenblatt5;
 
-
 public class EdelsteinBox {
 	private Edelstein[] edelsteine;
 	
@@ -10,7 +9,7 @@ public class EdelsteinBox {
 	
 	public int getAnzahl(Edelstein sorte) {
 		int anzahl = 0;
-		for (Edelstein edelstein : this.edelsteine) {
+		for(Edelstein edelstein : this.edelsteine) {
 			if(edelstein.equals(sorte))
 				anzahl++;
 		}
@@ -21,20 +20,20 @@ public class EdelsteinBox {
 	public String toString() {
 		return ausgeben();
 	}
-
+	
 	private String ausgeben() {
 		String ausgabe = "(";
-		for (Edelstein edelstein : this.edelsteine) {
-			switch (edelstein) {
-			case Diamant:
-				ausgabe += "D";
-				break;
-			case Rubin:
-				ausgabe += "R";
-				break;
-			case Smaragd:
-				ausgabe += "S";
-				break;
+		for(Edelstein edelstein : this.edelsteine) {
+			switch(edelstein) {
+				case Diamant:
+					ausgabe += "D";
+					break;
+				case Rubin:
+					ausgabe += "R";
+					break;
+				case Smaragd:
+					ausgabe += "S";
+					break;
 			}
 		}
 		return ausgabe + ")";
@@ -42,7 +41,7 @@ public class EdelsteinBox {
 	
 	public EdelsteinBox hineinlegen(Edelstein sorte, int anzahl) {
 		int verbleibendeAnzahl = anzahl;
-		for (int i = 0; i < this.edelsteine.length; i++) {
+		for(int i = 0; i < this.edelsteine.length; i++) {
 			Edelstein edelstein = this.edelsteine[i];
 			if(edelstein == null) {
 				this.edelsteine[i] = sorte;
@@ -51,7 +50,7 @@ public class EdelsteinBox {
 		}
 		if(verbleibendeAnzahl > 0) {
 			Edelstein[] copyEdelsteine = this.edelsteine;
-			this.edelsteine = new Edelstein[Math.max(verbleibendeAnzahl, this.edelsteine.length*2)];
+			this.edelsteine = new Edelstein[Math.max(verbleibendeAnzahl, this.edelsteine.length * 2)];
 			System.arraycopy(copyEdelsteine, 0, this.edelsteine, 0, copyEdelsteine.length);
 			hineinlegen(sorte, verbleibendeAnzahl);
 		}
@@ -60,9 +59,9 @@ public class EdelsteinBox {
 	
 	public EdelsteinBox herausnehmen(Edelstein sorte, int anzahl) {
 		int verbleibendeAnzahl = anzahl;
-		for (int i = 0; (i < this.edelsteine.length) && (verbleibendeAnzahl > 0); i++) {
+		for(int i = 0; (i < this.edelsteine.length) && (verbleibendeAnzahl > 0); i++) {
 			Edelstein edelstein = this.edelsteine[i];
-			if (edelstein.equals(sorte)) {
+			if(edelstein.equals(sorte)) {
 				this.edelsteine[i] = null;
 				verbleibendeAnzahl--;
 			}
@@ -71,9 +70,9 @@ public class EdelsteinBox {
 	}
 	
 	public EdelsteinBox umwandeln(Edelstein vonSorte, Edelstein zuSorte) {
-		for (int i = 0; i < this.edelsteine.length; i++) {
+		for(int i = 0; i < this.edelsteine.length; i++) {
 			Edelstein edelstein = this.edelsteine[i];
-			if (edelstein.equals(vonSorte)) {
+			if(edelstein.equals(vonSorte)) {
 				this.edelsteine[i] = zuSorte;
 			}
 		}
