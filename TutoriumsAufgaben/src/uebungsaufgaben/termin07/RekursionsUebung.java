@@ -23,4 +23,14 @@ public class RekursionsUebung {
 		
 		return (erstesZeichen == zuEntfernendesZeichen) ? restlicheZeichenkette : erstesZeichen + restlicheZeichenkette ;
 	}
+	
+	public String vorkommenEntfernenIterativ(String zeichenkette, char zuEntfernendesZeichen){
+		String neueZeichenkette = "";
+		for (int i = 0; i < zeichenkette.length(); i++) {
+			if(zeichenkette.charAt(i)!=zuEntfernendesZeichen){
+				neueZeichenkette = neueZeichenkette + zeichenkette.charAt(i);
+			}
+		}
+		return neueZeichenkette;
+	}
 }

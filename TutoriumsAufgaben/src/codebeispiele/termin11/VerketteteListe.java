@@ -9,6 +9,7 @@ package codebeispiele.termin11;
  */
 public class VerketteteListe<T> {
 	private ListenElement<T> _startWaechter;
+	private ListenElement<T> _endWaechter;
 	private int _elemente;
 	
 	
@@ -16,6 +17,9 @@ public class VerketteteListe<T> {
 	public VerketteteListe() {
 		super();
 		_startWaechter = new ListenElement<T>(null);
+		_endWaechter = new ListenElement<T>(null);
+		_startWaechter.setzeNachfolger(_endWaechter);
+		_endWaechter.setzeVorgaenger(_startWaechter);
 		_elemente = 0;
 	}
 
@@ -130,12 +134,13 @@ public class VerketteteListe<T> {
 	 */
 	private void istGueltigerIndex(int index) {
 		if(index >= _elemente) {
-			throw new IndexOutOfBoundsException("Der übergegebene Index ist größer als der maximale Index");
+			throw new IndexOutOfBoundsException("Der uebergegebene Index ist groesser als der maximale Index");
 		}
 	}
 	
 	private class ListenElement<T2> {
 		private ListenElement<T2> _nachfolger;
+		private ListenElement<T2> _vorgaenger;
 		private T2 _inhalt;
 		
 		
@@ -147,6 +152,10 @@ public class VerketteteListe<T> {
 		public ListenElement<T2> gibNachfolger() {
 			return _nachfolger;
 		}
+
+		public ListenElement<T2> gibVorgaenger() {
+			return _vorgaenger;
+		}
 		
 		public T2 gibInhalt() {
 			return _inhalt;
@@ -154,6 +163,10 @@ public class VerketteteListe<T> {
 		
 		public void setzeNachfolger(ListenElement<T2> nachfolger) {
 			_nachfolger = nachfolger;
+		}
+		
+		public void setzeVorgaenger(ListenElement<T2> vorgaenger) {
+			_vorgaenger = vorgaenger;
 		}
 		
 		public void setzeInhalt(T2 element) {
