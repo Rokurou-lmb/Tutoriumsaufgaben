@@ -1,7 +1,7 @@
 package _2016_SS_PR1_TI1.codebeispiele.termin07.enumbeispiel;
 
 /**
- * Beschreibt mögliche Werte einer Spielkarte.
+ * Beschreibt moegliche Werte einer Spielkarte.
  * Asse werden in diesem Beispiel als 1 angesehen
  * @author Lenno
  */
@@ -10,7 +10,7 @@ public enum Wert {
 	ZWEI(2),
 	DREI(3),
 	VIER(4),
-	FÜNF(5),
+	FUENF(5),
 	SECHS(6),
 	SIEBEN(7),
 	ACHT(8),
@@ -18,7 +18,7 @@ public enum Wert {
 	ZEHN(10),
 	BUBE(11),
 	DAME(12),
-	KÖNIG(13);
+	KOENIG(13);
 	
 	private int zahlenWert;
 	
