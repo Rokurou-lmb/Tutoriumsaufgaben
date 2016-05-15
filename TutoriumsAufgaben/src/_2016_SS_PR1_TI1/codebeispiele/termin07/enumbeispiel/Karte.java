@@ -9,7 +9,7 @@ public class Karte {
 	private final Wert wert;
 	
 	/**
-	 * Initialisiert eine Karte mit der übergebenen {@link Farbe} und {@link Wert}
+	 * Initialisiert eine Karte mit der Uebergebenen {@link Farbe} und {@link Wert}
 	 * @param farbe Die {@link Farbe} der Karte
 	 * @param wert Der {@link Wert} der Karte
 	 */
@@ -27,12 +27,12 @@ public class Karte {
 	}
 	
 	/**
-	 * Vergleicht diese Karte mit einer anderen Karte und gibt {@code true} zurück,
-	 * wenn der Wert diese Karte größer ist als der Wert der anderen Karte.
+	 * Vergleicht diese Karte mit einer anderen Karte und gibt {@code true} zurueck,
+	 * wenn der Wert diese Karte groesser ist als der Wert der anderen Karte.
 	 * @param andereKarte
 	 * @return
 	 */
-	public boolean größerAls(Karte andereKarte) {
+	public boolean groesserAls(Karte andereKarte) {
 		return wert.getZahlenWert() > andereKarte.getWert().getZahlenWert();
 	}
 	

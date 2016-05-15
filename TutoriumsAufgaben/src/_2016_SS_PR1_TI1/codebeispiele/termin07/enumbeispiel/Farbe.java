@@ -1,7 +1,7 @@
 package _2016_SS_PR1_TI1.codebeispiele.termin07.enumbeispiel;
 
 /**
- * Beschreibt mögliche "Farben" einer Spielkarte
+ * Beschreibt moegliche "Farben" einer Spielkarte
  * @author Lenno
  */
 public enum Farbe {
