@@ -1,5 +1,7 @@
 package _2016_SS_PR1_TI1.aufgabenblatt6;
 
+import java.util.Random;
+
 /**
  * Trivialimplementation von {@link SendungsdauerSchaetzer} antwortet auf
  * Anfragen statisch.
@@ -8,6 +10,8 @@ package _2016_SS_PR1_TI1.aufgabenblatt6;
  *
  */
 public class DummerSchaetzer implements SendungsdauerSchaetzer {
+	
+	private final static Random RNG = new Random();
 
 	/**
 	 * Gibt immer 1 zur�ck.
@@ -19,7 +23,7 @@ public class DummerSchaetzer implements SendungsdauerSchaetzer {
 	 */
 	@Override
 	public int getSendungsTransportDauer(Staedte herkunft, Staedte ziel) {
-		return 1;
+		return RNG.nextInt(1000);
 	}
 
 }

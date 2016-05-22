@@ -42,7 +42,9 @@ public abstract class Sendung {
 		return ausgeliefert;
 	}
 	
-	public void aktualisiereZeitpunkt(int neuerZeitpunkt) {
-		this.startZeitpunkt = neuerZeitpunkt;
+	public void aktualisiereZeitpunkt(int aktuellerZeitpunkt) {
+		if(aktuellerZeitpunkt > startZeitpunkt + transportDauer) {
+			ausgeliefert = true;
+		}
 	}
 }
