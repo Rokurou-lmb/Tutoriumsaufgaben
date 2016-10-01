@@ -34,6 +34,7 @@ public class Kuehlschrank {
 	
 	/**
 	 * Fuellt Gegenstaende nach, wenn sie nicht mehr im Kuehlschrank vorhanden sind.
+	 * Gibt eine Rückmeldung auf der Konsole aus.
 	 */
 	public void auffuellen() {
 		if(!_milchImKuehlschrank)
@@ -53,7 +54,7 @@ public class Kuehlschrank {
 	
 	/**
 	 * Verbraucht Eier, wenn vorhanden.
-	 * Gibt eine Meldung auf der Konsole aus wenn keine Eier vorhanden sind.
+	 * Gibt eine Rückmeldung auf der Konsole aus.
 	 */
 	public void eierEssen() {
 		if(_eierImKuehlschrank) 
@@ -69,7 +70,7 @@ public class Kuehlschrank {
 	
 	/**
 	 * Verbraucht Milch, wenn vorhanden.
-	 * Gibt eine Meldung auf der Konsole aus wenn keine Milch vorhanden sind.
+	 * Gibt eine Rückmeldung auf der Konsole aus.
 	 */
 	public void milchTrinken() {
 		if(_milchImKuehlschrank)
@@ -85,7 +86,7 @@ public class Kuehlschrank {
 	
 	/**
 	 * Verbraucht Saft, wenn vorhanden.
-	 * Gibt eine Meldung auf der Konsole aus wenn kein Saft vorhanden ist.
+	 * Gibt eine Rückmeldung auf der Konsole aus.
 	 */
 	public void saftTrinken() {
 		if(_saftImKuehlschrank)
@@ -123,5 +124,34 @@ public class Kuehlschrank {
 	 */
 	public boolean istKuehlschrankVoll() {
 		return _milchImKuehlschrank && _eierImKuehlschrank && _saftImKuehlschrank;
+	}
+	
+	/**
+	 * Gibt eine Rückmeldung auf der Konsole aus, welche zeigt was sich momentan im Kuehlschrank befindet.
+	 */
+	public void wasIstImKuehlschrank() {
+		String kuehlschrankInhalt = "";
+		if(!_milchImKuehlschrank && _eierImKuehlschrank && _saftImKuehlschrank)
+		{
+			kuehlschrankInhalt += "Der Kuehlschrank ist leer!";
+		}
+		else
+		{
+			kuehlschrankInhalt += "Im Kuehlschrank befinden sich zur Zeit:";
+			if(_milchImKuehlschrank) 
+			{
+				kuehlschrankInhalt += " Milch,";
+			}
+			if(_eierImKuehlschrank)
+			{
+				kuehlschrankInhalt += " Eier,";
+			}
+			if(_saftImKuehlschrank)
+			{
+				kuehlschrankInhalt += " Saft,";
+			}
+			kuehlschrankInhalt = kuehlschrankInhalt.substring(0, kuehlschrankInhalt.length()-1);
+		}
+		System.out.println(kuehlschrankInhalt);
 	}
 }
