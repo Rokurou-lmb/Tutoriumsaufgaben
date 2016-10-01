@@ -1,4 +1,4 @@
-package _2016_WS_PR1_TI.uebungsaufgaben;
+package _2016_WS_PR1_TI.uebungsaufgaben.termin01;
 
 /**
  * Diese Klasse modeliert einen simplen Kuehlschrank, welcher einzelne Gegenstaende beinhalten kann.
