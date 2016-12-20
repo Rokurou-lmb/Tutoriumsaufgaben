@@ -7,7 +7,8 @@ public class ServiceMix2Impl implements ServiceMix2 {
 		testNull(intarr);
 		
 		int summe = 0;
-		for(int i = 0; i < intarr.length; i++) {
+		for(int i = 0; i < intarr.length; i++)
+		{
 			if(intarr[i] != null)
 			{
 				summe += intarr[i].length;
@@ -25,8 +26,10 @@ public class ServiceMix2Impl implements ServiceMix2 {
 		String laengstesPalindrom = "";
 		String sCopy = s.toLowerCase();
 		
-		for(int i = 0; i < s.length(); i++) {
-			for(int j = s.length(); j > i; j--) {
+		for(int i = 0; i < s.length(); i++)
+		{
+			for(int j = s.length(); j > i; j--)
+			{
 				String currentString = sCopy.substring(i, j);
 				if(istPalindrom(currentString))
 				{
